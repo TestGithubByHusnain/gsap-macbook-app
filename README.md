@@ -1,16 +1,99 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 MacBook GSAP Landing Page
 
-Currently, two official plugins are available:
+An interactive, animated landing page for MacBook, built with React, Vite, GSAP, Three.js, and TailwindCSS. Features stunning 3D models, smooth animations, and a modern UI. Perfect for showcasing product highlights and performance! 💻✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📦 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ GSAP-powered animations for smooth transitions
+- 🖥️ 3D MacBook models with react-three-fiber
+- 🎨 Responsive design with TailwindCSS
+- 🌙 Dark/light mode support
+- 🏆 Product highlights and performance sections
+- 🎥 Video backgrounds and interactive features
+- 🛒 Modern UI components (Navbar, Footer, Showcase, etc.)
 
-## Expanding the ESLint configuration
+## 🗂️ Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+├── public/
+│   ├── fonts/         # Custom font files
+│   ├── models/        # 3D model files (.glb)
+│   ├── videos/        # Feature and hero videos
+│   └── ...            # Images, icons, assets
+├── src/
+│   ├── components/    # React components (Hero, Features, ProductViewer, etc.)
+│   │   ├── models/    # MacBook 3D model components
+│   │   ├── three/     # Three.js helpers (lights, switcher)
+│   ├── constants/     # App constants
+│   ├── store/         # Zustand store
+│   ├── App.jsx        # Main app component
+│   ├── main.jsx       # Entry point
+│   └── index.css      # Global styles
+├── index.html         # App HTML template
+├── package.json       # Project metadata & scripts
+├── vite.config.js     # Vite configuration
+└── README.md          # Project info
+```
+
+## 🛠️ Tech Stack
+
+- React 19
+- Vite
+- GSAP
+- Three.js & react-three-fiber
+- TailwindCSS
+- Zustand (state management)
+
+## 🚀 Getting Started
+
+Clone the repo and install dependencies:
+
+```powershell
+git clone https://github.com/TestGithubByHusnain/gsap-macbook-app.git
+cd gsap-macbook-app
+npm ci
+```
+
+Run locally:
+
+```powershell
+npm run dev
+```
+
+Build for production:
+
+```powershell
+npm run build
+```
+
+Preview production build:
+
+```powershell
+npm run preview
+```
+
+## 🌐 Deploying to Vercel
+
+1. Push your latest code to the `main` branch on GitHub.
+2. Go to [Vercel](https://vercel.com/) and import your repo.
+3. Set build command to `npm run build` and output directory to `dist`.
+4. Click Deploy! Your site will be live at `https://your-app.vercel.app`.
+
+_Optional_: Add a `vercel.json` for SPA routing:
+```json
+{
+	"rewrites": [ { "source": "/(.*)", "destination": "/index.html" } ]
+}
+```
+
+## 🙌 Credits
+
+- Inspired by Apple MacBook product pages
+- Built with [React](https://react.dev/), [Vite](https://vitejs.dev/), [GSAP](https://gsap.com/), [Three.js](https://threejs.org/), [TailwindCSS](https://tailwindcss.com/)
+
+## 📄 License
+
+MIT
